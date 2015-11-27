@@ -4,21 +4,21 @@ A library to get play store prices for music as returned by their webpage
 
 This project is not endorsed by of affiliated with Google in any way.
 
-## Usage
+# Usage
 
-Download via npm
+## Download via npm
 
 ```javascript
 npm install musicplaystoreprices
 ```
 
-Require Library
+## Require Library
 
 ```javascript
 var playSearch = require('musicplaystoreprices');
 ```
 
-Search For Song
+## Search For Song
 
 Using Node JS callback style:
 
@@ -34,7 +34,7 @@ playSearch.getSong(options, function(err, data){
 
 ```
 
-Search For Album
+## Search For Album
 
 Using Node JS callback style:
 
