@@ -1,5 +1,5 @@
 {
-  "name": "MusicPlayStorePrices",
+  "name": "musicplaystoreprices",
   "version": "1.0.0",
   "description": "A library used to get Google Play Store prices for music",
   "main": "index.js",

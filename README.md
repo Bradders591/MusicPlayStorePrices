@@ -6,12 +6,17 @@ This project is not endorsed by of affiliated with Google in any way.
 
 ## Usage
 
+Download via npm
+
+```javascript
+npm install musicplaystoreprices
+```
+
 Require Library
 
 ```javascript
-var playSearch = require('MusicPlayStorePrices');
+var playSearch = require('musicplaystoreprices');
 ```
-
 
 Search For Song
 
