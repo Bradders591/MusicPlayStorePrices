@@ -29,4 +29,18 @@ playSearch.getSong(options, function(err, data){
 
 ```
 
+Search For Album
 
+Using Node JS callback style:
+
+```javascript
+
+var options = {
+	"artist": "Tremonti",
+	"album": "Cauterize"
+}
+playSearch.getAlbum(options, function(err, data){
+	// returns array of albums
+});
+
+```
