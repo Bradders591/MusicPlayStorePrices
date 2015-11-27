@@ -5,7 +5,10 @@ var cheerio = require('cheerio');
 module.exports = {
   getSong: function(options, cb) {
     var returnArray = [];
-
+    if(!options.artist || !options.song) {
+      cb('Invalid Options', null);
+      return;
+    };
     var artistWithPlus = options.artist.split(' ').join('+');
     var songWithPlus = options.song.split(' ').join('+');
     var url = 'https://play.google.com/store/search?q=';
@@ -38,6 +41,10 @@ module.exports = {
   },
   getAlbum: function(options, cb) {
     var returnArray = [];
+    if(!options.artist || !options.album) {
+      cb('Invalid Options', null);
+      return;
+    };
     var artistWithPlus = options.artist.split(' ').join('+');
     var albumWithPlus = options.album.split(' ').join('+');
     var url = 'https://play.google.com/store/search?q=';
@@ -69,26 +76,3 @@ module.exports = {
     });
   }
 };
-
-	/*var url = 'https://play.google.com/store/search?q=riverman+noel+gallagher&c=music';
-	request(url, function(error, response, html){
-        if(!error){
-        	var $ = cheerio.load(html);
-        	console.log($('.title-link').text());
-
-        	var topSongs = $('.title-link:contains("Songs")').closest('.cluster');
-        	var songDiv = topSongs.find('.card-list');
-        	console.log(songDiv);
-
-        	songDiv.children().each(function(i, elm) {
-			    var coverURL = $(this).find('.cover-image').attr('src');
-			    var title = $(this).find('.title').text();
-			    var artist = $(this).find('.subtitle').text();
-			    var price = $(this).find('span.display-price').first().text();
-			    console.log('coverURL: ' + coverURL);
-			    console.log('title: ' + title);
-			    console.log('artist: ' + artist);
-			    console.log('price: ' + price);
-			});
-      	}
-     });*/
