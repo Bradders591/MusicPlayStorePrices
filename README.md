@@ -1,5 +1,7 @@
 # MusicPlayStorePrices
 
+A library to get play store prices for music as returned by their webpage
+
 This project is not endorsed by of affiliated with Google in any way.
 
 ## Usage
