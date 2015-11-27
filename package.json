@@ -1,0 +1,34 @@
+{
+  "name": "MusicPlayStorePrices",
+  "version": "1.0.0",
+  "description": "A library used to get Google Play Store prices for music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bradders591/MusicPlayStorePrices.git"
+  },
+  "keywords": [
+    "Google",
+    "Play",
+    "Store",
+    "Music",
+    "Prices"
+  ],
+  "author": "Rob Bradbury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bradders591/MusicPlayStorePrices/issues"
+  },
+  "homepage": "https://github.com/Bradders591/MusicPlayStorePrices",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
