@@ -44,9 +44,11 @@ var sendRequest = function(url, type, cb) {
         songDiv.children().each(function(i, elm) {
           var coverURL = $(this).find('.cover-image').attr('src');
           var title = $(this).find('.title').text();
+          var link = $(this).find('.title').attr('href');
+          var fullLink = 'https://play.google.com' + link;
           var artist = $(this).find('.subtitle').text();
           var price = $(this).find('span.display-price').first().text();
-          returnArray.push({'CoverArt': coverURL, 'title': title, 'artist': artist, 'price': price});
+          returnArray.push({'CoverArt': coverURL, 'title': title, 'artist': artist, 'price': price, 'link': fullLink});
         });
         if(returnArray.length < 1) {
           cb('Nothing Found', null);
